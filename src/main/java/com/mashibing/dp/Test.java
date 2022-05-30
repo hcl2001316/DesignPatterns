@@ -14,6 +14,7 @@ public class Test {
             System.out.println("continue");
         });
         t.start();
+        System.out.println("测试");
 
         Thread.sleep(1000);
         LockSupport.unpark(t); //t线程解除wait态
